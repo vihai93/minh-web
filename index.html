@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME | Pins</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav-style.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -37,16 +38,27 @@
     <div class="nav-container animate__animated animate__bounceInRight">
         <div class="nav-layer" onclick="functionToCloseMenu()"></div>
         <div class="nav">
-            <div class="menu-off">
+            <div class = "btn-close-menu-container">
                 <button class="btn-close-menu" onclick="functionToCloseMenu()"></button>
             </div>
+            
+           
             <div class="nav-menu">
-                <ul class="ul-nav-menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li><a href="service-process.html">Service Process</a></li>
-                </ul>
+                <div class="ul-nav-menu">
+                    <div class = "nav-index">
+                        <a href="index.html"><span>HOME . 首页</span></a>
+                    </div>
+                    <div class="nav-gallery">
+                        <a href="gallery.html">GALLERY . 作品</a>
+                    </div>
+                    <div class="nav-about-us">
+                        <a href="about-us.html">About Us . 关于</a>
+                    </div>
+                    <div class="nav-service-process">
+                        <a href="service-process.html">Service Process . 流程</a>
+                    </div>
+                    
+                </div>
             </div>
     
             <div class="nav-info">
@@ -76,7 +88,7 @@
                 </div>
             </div>
             <div class="nav-fb-insta">
-                <button class="btn-fb" onclick="more()"></button>
+                <button class="btn-fb" onclick="goToFb()"></button>
                 <button class="btn-insta" onclick="more()"></button>
             </div>
         </div>
@@ -130,7 +142,7 @@ REKA International award 2017 .
                     <p>Projects</p>
                 </div>
             </div>
-            <button onclick="more()" class="btn-more-1">more</button>
+            <button onclick="goToGallery()" class="btn-more-1">more</button>
         </div>
         <div class="container-collection-1">
             <div class="collection-1">
@@ -231,7 +243,7 @@ REKA International award 2017 .
                 specialize in interior design, architecture and product design. Our ambition is to create designs that
                 not only looks good, but is functional too.
             </p>
-            <button class="btn-about-forward" onclick="more()"></button>
+            <button class="btn-about-forward" onclick="goToAboutUs()"></button>
         </div>
     </section>
     <!--------------------------more-project---------------------------------------->
@@ -290,7 +302,7 @@ REKA International award 2017 .
                 life style .
 
             </p>
-            <button class="btn-service-forward" onclick="more()"></button>
+            <button class="btn-service-forward" onclick="goToOurService()"></button>
         </div>
     </section>
     <!------------------------------------fotter-------------------------------------------->
@@ -388,34 +400,7 @@ Monday to friday
             }
         })
     </script>
-    <script>
-        function functionToCloseMenu() {
-            // const selector = document.querySelector(".nav");
-            // selector.style.display = "none";
-            const selector = document.querySelector(".nav-container");
-            selector.style.display = "none";
-        }
-        function functionToOpenMenu() {
-            // const selector = document.querySelector(".nav");
-            // selector.style.display = "block";
-            const selector= document.querySelector(".nav-container");
-            selector.style.display = "flex";
-        }
-        function more() {
-            alert("Sorry, We are maintaining this function!");
-        }
-        function functionToDisplayLayer() {
-            const layer = document.querySelector(".layer-on-image");
-            layer.style.display = "block";
-        }
-        function functionToHiddenLayer() {
-            const layer = document.querySelector(".layer-on-image");
-            layer.style.display = "none";
-        }
-        function goToGallery(){
-            location.assign("gallery.html");
-        }
-    </script>
+    <script src="script.js"></script>
     <!-- <script>
         $(document).ready(function () {
             alert("meo");

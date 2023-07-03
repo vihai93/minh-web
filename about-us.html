@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | Pins</title>
     <link rel="stylesheet" href="style-about-us.css">
+    <link rel="stylesheet" href="nav-style.css">
 </head>
 
 <body>
@@ -13,47 +14,63 @@
     <div class="menu">
         <button class="btn-menu" onclick="functionToOpenMenu()"></button>
     </div>
-    <div class="nav animate__animated animate__bounceInRight">
-        <div class="menu-off">
-            <button class="btn-close-menu" onclick="functionToCloseMenu()"></button>
-        </div>
-        <div class="nav-menu">
-            <ul class="ul-nav-menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="gallery.html">GALLERY</a></li>
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="service-process.html">Service Process</a></li>
-            </ul>
-        </div>
-        <div class="nav-info">
-            <div>
-                <p>Contact us Monday to friday 10am-7pm</p>
+
+    <div class="nav-container animate__animated animate__bounceInRight">
+        <div class="nav-layer" onclick="functionToCloseMenu()"></div>
+        <div class="nav">
+            <div class = "btn-close-menu-container">
+                <button class="btn-close-menu" onclick="functionToCloseMenu()"></button>
             </div>
-            <div class="nav-info-phone">
-                <img class="img-phone" src="image/call.webp">
-                <div class="phone-number">
-                    <p>014-944 7685</p>
-                    <p>03-7887 2752</p>
+            
+           
+            <div class="nav-menu">
+                <div class="ul-nav-menu">
+                    <div class = "nav-index">
+                        <a href="index.html"><span>HOME . 首页</span></a>
+                    </div>
+                    <div class="nav-gallery">
+                        <a href="gallery.html">GALLERY . 作品</a>
+                    </div>
+                    <div class="nav-about-us">
+                        <a href="about-us.html">About Us . 关于</a>
+                    </div>
+                    <div class="nav-service-process">
+                        <a href="service-process.html">Service Process . 流程</a>
+                    </div>
+                    
                 </div>
             </div>
-            <div class="nav-info-mail">
-                <img class="img-mail" src="image/mail.webp">
-                <div class="mail-txt">
-                    <p>pinssalesteam@gmail.com</p>
+    
+            <div class="nav-info">
+                <div>
+                    <p>Contact us Monday to friday 10am-7pm</p>
+                </div>
+                <div class="nav-info-phone">
+                    <img class="img-phone" src="image/call.webp">
+                    <div class="phone-number">
+                        <p>014-944 7685</p>
+                        <p>03-7887 2752</p>
+                    </div>
+                </div>
+                <div class="nav-info-mail">
+                    <img class="img-mail" src="image/mail.webp">
+                    <div class="mail-txt">
+                        <p>pinssalesteam@gmail.com</p>
+                    </div>
+                </div>
+                <div class="nav-info-addr">
+                    <img class="img-addr" src="image/loc.webp">
+                    <div class="location-txt">
+                        <p>D 3-3, Pusat Komersial Parklane, Jalan SS 7/26,
+                            47301 Petaling Jaya,
+                            Selangor， Malaysia.</p>
+                    </div>
                 </div>
             </div>
-            <div class="nav-info-addr">
-                <img class="img-addr" src="image/loc.webp">
-                <div class="location-txt">
-                    <p>D 3-3, Pusat Komersial Parklane, Jalan SS 7/26,
-                        47301 Petaling Jaya,
-                        Selangor， Malaysia.</p>
-                </div>
+            <div class="nav-fb-insta">
+                <button class="btn-fb" onclick="more()"></button>
+                <button class="btn-insta" onclick="more()"></button>
             </div>
-        </div>
-        <div class="nav-fb-insta">
-            <button class="btn-fb" onclick="more()"></button>
-            <button class="btn-insta" onclick="more()"></button>
         </div>
     </div>
     <!------------------------------container-------------------------------------->
@@ -124,7 +141,7 @@
                         <p>visit us : D 3-3, Pusat Komersial Parklane, Jalan SS 7/26, 
                             47301 Petaling Jaya, Selangor</p>
                     </div>
-                    <button class="btn-submit">Submit</button>
+                    <button class="btn-submit" onclick="more()">Submit</button>
 
                 </div>
             </div>
@@ -132,20 +149,7 @@
 
     </div>
 
-    <script>
-        function functionToCloseMenu() {
-            const selector = document.querySelector(".nav");
-            selector.style.display = "none";
-        }
-        function functionToOpenMenu() {
-            const selector = document.querySelector(".nav");
-            selector.style.display = "block";
-        }
-        function more() {
-            alert("Sorry, We are maintaining this function!");
-        }
-
-    </script>
+    <script src="script.js"></script>
 </body>
 <!------------------------------------footer-------------------------------------------->
 <footer>

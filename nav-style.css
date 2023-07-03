@@ -1,0 +1,209 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*css menu button*/
+.menu {
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    z-index: 10;
+}
+
+.menu .btn-menu {
+
+    background-image: url(image/menu.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: none;
+}
+
+.menu .btn-menu:hover {
+    background-image: url(image/menu-open.png);
+    cursor: pointer;
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 20;
+}
+
+.nav-layer {
+    width: 83%;
+    height: 100%;
+    opacity: 0;
+}
+
+.nav {
+    position: relative;
+    background-color: rgb(153, 153, 151);
+    width: 17%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    border: black solid 1px;
+    align-items: center;
+}
+
+/* .menu-off {
+    position: relative;
+    height: 50px;
+} */
+.btn-close-menu-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+}
+
+.btn-close-menu {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    top: 10px;
+    background-image: url(image/close.png);
+    background-color: rgb(153, 153, 151);
+    border: none;
+    background-repeat: none;
+}
+
+.btn-close-menu:hover {
+    cursor: pointer;
+}
+
+.nav-menu {
+    width: 70%;
+    border-bottom: white solid 2px;
+    padding-bottom: 40px;
+    font-weight: bold;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ul-nav-menu {
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+
+
+
+.nav-info {
+    border-bottom: white solid 2px;
+    width: 70%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 15px;
+}
+
+.nav-info-phone {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px
+}
+
+.img-phone,
+.img-mail,
+.img-addr {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+
+.nav-info-mail {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px
+}
+
+.mail-txt {
+    margin-top: 10px;
+}
+
+.nav-info-addr {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.btn-fb {
+    width: 32px;
+    height: 32px;
+    background-image: url(image/fb.webp);
+    border: none;
+    background-color: rgb(153, 153, 151);
+    background-repeat: none;
+}
+
+.nav-fb-insta {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.btn-insta {
+    width: 32px;
+    height: 32px;
+    background-image: url(image/insta.webp);
+    border: none;
+    background-color: rgb(153, 153, 151);
+    background-repeat: none;
+}
+
+.btn-fb,
+.btn-insta:hover {
+    cursor: pointer;
+}
