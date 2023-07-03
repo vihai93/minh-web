@@ -27,6 +27,10 @@ ul {
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 /*css menu button*/
 .menu {
     position: fixed;
@@ -40,8 +44,11 @@ ul {
     background-image: url(image/menu.png);
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    border: none;
+    background-color: whitesmoke;
     background-repeat: none;
+    border-radius:  45%;
+    opacity: 0.5;
 }
 
 .menu .btn-menu:hover {
@@ -57,6 +64,8 @@ ul {
     height: 100%;
     display: flex;
     z-index: 20;
+    animation: bounceInRight;
+    animation-duration: 2s;
 }
 
 .nav-layer {
@@ -138,9 +147,6 @@ a:hover {
     color: black;
 }
 
-
-
-
 .nav-info {
     border-bottom: white solid 2px;
     width: 70%;
@@ -206,4 +212,42 @@ a:hover {
 .btn-fb,
 .btn-insta:hover {
     cursor: pointer;
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 46.25em) {
+    .nav-container {
+        display: none;
+        animation: none;
+    }
+
+    .nav {
+        width: 100%;
+    }
+
+    .nav-layer {
+        display: none;
+    }
+
+    .menu {
+        top: 25px;
+        right: 15px;
+    }
+
+    .menu .btn-menu {
+        width: 30px;
+        height: 50px;
+        opacity: 1;
+        background-color: inherit;
+
+    }
+
+    .btn-close-menu {
+        top: 25px;
+        right: 0;
+        width: 50px;
+        height: 50px;
+    }
+
+
 }
