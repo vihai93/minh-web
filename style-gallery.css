@@ -1,0 +1,354 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*------------------------css menu button---------------------------------*/
+.menu {
+    position: fixed;
+    top: 5%;
+    right: 2%;
+    z-index: 10;
+}
+
+.menu .btn-menu {
+
+    background-image: url(image/menu.png);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: none;
+}
+
+.menu .btn-menu:hover {
+    background-image: url(image/menu-open.png);
+    cursor: pointer;
+}
+
+.nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: rgb(153, 153, 151);
+    width: 18%;
+    min-width: 350px;
+    height: 100%;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.menu-off {
+
+    position: relative;
+    height: 50px;
+}
+
+.btn-close-menu {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 0;
+    background-image: url(image/close.png);
+    background-color: rgb(153, 153, 151);
+    border: none;
+    background-repeat: none;
+}
+
+.btn-close-menu:hover {
+    cursor: pointer;
+}
+
+.nav-menu {
+    width: 70%;
+    margin-left: 15%;
+    border-bottom: white solid 3px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    width: 100px;
+    padding: 10px;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.ul-nav-menu li {
+    margin-top: 20px;
+}
+
+.nav-info {
+    border-bottom: white solid 3px;
+    padding: 20px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.nav-info-phone {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px
+}
+
+.img-phone,
+.img-mail,
+.img-addr {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+
+.nav-info-mail {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px
+}
+
+.mail-txt {
+    margin-top: 10px;
+}
+
+.nav-info-addr {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.btn-fb {
+    width: 32px;
+    height: 32px;
+    background-image: url(image/fb.webp);
+    border: none;
+    background-color: rgb(153, 153, 151);
+    background-repeat: none;
+}
+
+.nav-fb-insta {
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+}
+
+.btn-insta {
+    width: 32px;
+    height: 32px;
+    background-image: url(image/insta.webp);
+    border: none;
+    background-color: rgb(153, 153, 151);
+    background-repeat: none;
+}
+
+.btn-fb,
+.btn-insta:hover {
+    cursor: pointer;
+}
+
+/* ---------------------------gallery---------------------*/
+.gallery-menu{
+    position: relative;
+    display: flex;
+    width: 800px;
+    top:100px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-1,
+.btn-2,
+.btn-3,
+.btn-4{
+    border: none;
+    background-color: gray;
+    color: white;
+}
+.btn-1:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.btn-2:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.btn-3:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.btn-4:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.gallery-container{
+    position: relative;;
+    display: flex;
+    width: 100vw;
+    height: auto;
+    min-height: 1000px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    gap:20px;
+}
+.gallery-1{
+   
+    width: 400px;
+    height: 400px;
+    background-color: coral;
+}
+.gallery-2{
+  
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}
+.gallery-3{
+   
+    width: 400px;
+    height: 400px;
+    background-color: coral;
+}
+.gallery-4{
+  
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}
+.gallery-5{
+   
+    width: 400px;
+    height: 400px;
+    background-color: coral;
+}
+.gallery-6{
+  
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}
+.gallery-7{
+   
+    width: 400px;
+    height: 400px;
+    background-color: coral;
+}
+.gallery-8{
+  
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}
+.gallery-9{
+   
+    width: 400px;
+    height: 400px;
+    background-color: coral;
+}
+.gallery-10{
+  
+    width: 400px;
+    height: 400px;
+    background-color: green;
+}
+
+
+
+
+/*-----------------------------footer------------------------------------*/
+footer {
+    background-color: rgb(65, 65, 65);
+    position: relative;
+    box-sizing: border-box;
+    height: 70vh;
+    width: 100vw;
+
+}
+
+.banner {
+    padding-top: 50px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.infor {
+    display: flex;
+    color: #fff;
+    margin: 0 auto;
+    text-align: left;
+    width: 800px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* .award
+.contact,
+.office-hour {
+    font-size: small;
+} */
+
+.final-line {
+    display: flex;
+    color: #fff;
+    width: 800px;
+    margin: 0 auto;
+    justify-content: flex-end;
+    font-size: small;
+}
+
+.final-line .email {
+    margin-top: 10px;
+}
+.final-line .email:hover{
+    cursor: pointer;
+}
+
+.final-line .menu-final-line {
+    margin-left: 50px;
+}
+
+.final-line .menu-final-line ul {
+    list-style-type: none;
+
+}
+
+.final-line .menu-final-line li {
+    display: inline;
+}

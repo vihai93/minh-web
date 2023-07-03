@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERIOR | Pins</title>
+    <link rel="stylesheet" href="style-gallery.css">
+</head>
+<body>
+    <!------------------------------MENU-------------------------------------------->
+    <div class="menu">
+        <button class="btn-menu" onclick="functionToOpenMenu()"></button>
+    </div>
+    <div class="nav animate__animated animate__bounceInRight">
+        <div class="menu-off">
+            <button class="btn-close-menu" onclick="functionToCloseMenu()"></button>
+        </div>
+        <div class="nav-menu">
+            <ul class="ul-nav-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="service-process.html">Service Process</a></li>
+            </ul>
+        </div>
+        <div class="nav-info">
+            <div>
+                <p>Contact us Monday to friday 10am-7pm</p>
+            </div>
+            <div class="nav-info-phone">
+                <img class="img-phone" src="image/call.webp">
+                <div class="phone-number">
+                    <p>014-944 7685</p>
+                    <p>03-7887 2752</p>
+                </div>
+            </div>
+            <div class="nav-info-mail">
+                <img class="img-mail" src="image/mail.webp">
+                <div class="mail-txt">
+                    <p>pinssalesteam@gmail.com</p>
+                </div>
+            </div>
+            <div class="nav-info-addr">
+                <img class="img-addr" src="image/loc.webp">
+                <div class="location-txt">
+                    <p>D 3-3, Pusat Komersial Parklane, Jalan SS 7/26,
+                        47301 Petaling Jaya,
+                        Selangor， Malaysia.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-fb-insta">
+            <button class="btn-fb" onclick="more()"></button>
+            <button class="btn-insta" onclick="more()"></button>
+        </div>
+    </div>
+    <!-----------------------------gallery-menu---------------------------->
+    <div class="gallery-menu">
+        <img src="image/Logo_01.webp">
+        <button class="btn-1">Interior design</button>
+        <button class="btn-2">facade design</button>
+        <button class="btn-3">commercial retail</button>
+        <button class="btn-4">video gallery</button>
+    </div>
+    <!----------------------------gallery-container-->
+    <div class="gallery-container">
+        <div class="gallery-1"></div>
+        <div class="gallery-2"></div>
+        <div class="gallery-3"></div>
+        <div class="gallery-4"></div>
+        <div class="gallery-5"></div>
+        <div class="gallery-6"></div>
+        <div class="gallery-7"></div>
+        <div class="gallery-8"></div>
+        <div class="gallery-9"></div>
+        <div class="gallery-10"></div>
+    </div>
+
+    <script>
+        function functionToCloseMenu() {
+            const selector = document.querySelector(".nav");
+            selector.style.display = "none";
+        }
+        function functionToOpenMenu() {
+            const selector = document.querySelector(".nav");
+            selector.style.display = "block";
+        }
+        function more() {
+            alert("Sorry, We are maintaining this function!");
+        }
+       
+    </script>
+</body>
+<!------------------------------------fotter-------------------------------------------->
+<footer>
+    <div class="banner">
+        <img src="image/logo.webp">
+    </div>
+    <div class="infor">
+        <div class="award">
+            <pre>
+            <h1>Award</h1>
+
+K- Design award 2022
+DOTY design award 2022
+
+A' Design award Italy 2021
+Qanvast design award 2021
+            
+ADA award 2020
+IDCS Singapore design award 2020
+SIDA Singapore Interior design award 2020
+A' Design award Italy 2020
+
+JIDA Design award 2019
+SIDA Singapore Interior design award 2019
+REKA international award 2019
+
+REKA international award 2018
+REKA international award 2017
+        </pre>
+        </div>
+        <div class="contact">
+            <pre>
+            <h1>Contact</h1> 
+
+D 3-3, Pusat Komersial Parklane,
+Jalan SS 7/26,
+47301 Petaling Jaya, Selangor，
+​Malaysia.
+
+
+
+03 - 7887 2752
+014 - 944 7685
+            </pre>
+        </div>
+        <div class="office-hour">
+            <pre>
+            <h1>Office Hour</h1>
+
+Monday to friday
+10am - 7pm
+            </pre>
+        </div>
+
+    </div>
+    <div class="final-line">
+        <div class="email">pinsalesteam@gmail.com</div>
+        <div class="menu-final-line">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="service-process.html">Service Process</a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+</html>
