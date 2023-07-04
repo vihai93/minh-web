@@ -11,176 +11,248 @@
 </head>
 
 <body>
-    <!------------------------------MENU-------------------------------------------->
-    <div class="menu">
-        <button class="btn-menu" onclick="functionToOpenMenu()"></button>
-    </div>
 
-    <div class="nav-container animate__animated animate__bounceInRight">
-        <div class="nav-layer" onclick="functionToCloseMenu()"></div>
-        <div class="nav">
-            <div class="btn-close-menu-container">
-                <button class="btn-close-menu" onclick="functionToCloseMenu()"></button>
-            </div>
-
-
-            <div class="nav-menu">
-                <div class="ul-nav-menu">
-                    <div class="nav-index">
-                        <a href="index.html"><span>HOME . 首页</span></a>
-                    </div>
-                    <div class="nav-gallery">
-                        <a href="gallery.html">GALLERY . 作品</a>
-                    </div>
-                    <div class="nav-about-us">
-                        <a href="about-us.html">About Us . 关于</a>
-                    </div>
-                    <div class="nav-service-process">
-                        <a href="service-process.html">Service Process . 流程</a>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="nav-info">
-                <div>
-                    <p>Contact us Monday to friday 10am-7pm</p>
-                </div>
-                <div class="nav-info-phone">
-                    <img class="img-phone" src="image/call.webp">
-                    <div class="phone-number">
-                        <p>014-944 7685</p>
-                        <p>03-7887 2752</p>
-                    </div>
-                </div>
-                <div class="nav-info-mail">
-                    <img class="img-mail" src="image/mail.webp">
-                    <div class="mail-txt">
-                        <p>pinssalesteam@gmail.com</p>
-                    </div>
-                </div>
-                <div class="nav-info-addr">
-                    <img class="img-addr" src="image/loc.webp">
-                    <div class="location-txt">
-                        <p>D 3-3, Pusat Komersial Parklane, Jalan SS 7/26,
-                            47301 Petaling Jaya,
-                            Selangor， Malaysia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="nav-fb-insta">
-                <button class="btn-fb" onclick="more()"></button>
-                <button class="btn-insta" onclick="more()"></button>
-            </div>
+    <section class="about-container">
+        <!------------------------------MENU-------------------------------------------->
+        <div class="menu">
+            <button class="btn-menu" onclick="functionToOpenMenu()"></button>
         </div>
-    </div>
-    <!------------------------------container-------------------------------------->
-    <div class="about-us-container">
-        <div class="about-us-banner">
-            <div class="img-logo-container">
-                <img class="img-logo" src="image/Logo_01.webp"></img>
-            </div>
-            <div class="about-us-txt">
-                <p>About Us</p>
-            </div>
-        </div>
-        <!------------------------------------------------>
-        <div class="our-story-container">
-            <div class="left-container">
-                <img src="image/demo1.webp">
-            </div>
-            <div class="right-container">
-                <div class="our-story-front-layer">
-                    <div class="title-vs-img">
-                        <div class="title-txt">
-                            <p><span style="font-size: 16px; color: gray">OUR</span><br>Story</p>
+
+        <div class="nav-container animate__animated animate__bounceInRight">
+            <div class="nav-layer" onclick="functionToCloseMenu()"></div>
+            <div class="nav">
+                <div class="btn-close-menu-container">
+                    <button class="btn-close-menu" onclick="functionToCloseMenu()"></button>
+                </div>
+
+
+                <div class="nav-menu">
+                    <div class="ul-nav-menu">
+                        <div class="nav-index">
+                            <a href="index.html"><span>HOME . 首页</span></a>
                         </div>
-                        <img src="image/our-story-demo.webp">
-                    </div>
-                    <div class="story-txt">
-                        <p>We specialize in interior design,
-                            architecture and decoration.
-                            Our ambition is to create designs with life style .</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="our-team-container">
-            <div class="con-1 img-zoom">
-                <img src="image/team1.webp">
-            </div>
-            <div class="con-2">
-                <p>Our Team</p>
-            </div>
-            <div class="con-3 img-zoom">
-                <img src="image/team2.webp">
-            </div>
-            <div class="con-4 img-zoom">
-                <img src="image/team3.webp">
-            </div>
-        </div>
-
-        <div class="introduce-txt">
-            <p>Pins Studio is composed of a group of professionals that love design and quality lifestyle. We specialize
-                in interior design, architecture and product design. Pins Studio is composed of a group of professionals
-                that love design and quality lifestyle. We specialize in interior design, architecture and product
-                design. Pins Studio is composed of a group of professionals that love design and quality lifestyle. We
-                specialize in interior design, architecture and product design. Pins Studio is composed of a group of
-                professionals that love design and quality lifestyle. We specialize in interior design, architecture and
-                product design. </p>
-        </div>
-        <div class="our-loc-container">
-            <div class="our-loc-txt">
-                <p class="txt-1">OUR</p>
-                <p class="txt-2">Location</p>
-            </div>
-            <button class="btn-contact-us" onclick="functionToOpenMenu()">contact us</button>
-        </div>
-        <div class="map-mes-container">
-            <div class="map-con">
-
-            </div>
-            <form class="mes-con" id="mes-form">
-                <div class="mes-title-txt">
-                    <p>message us</p>
-                </div>
-                <div class="tbl-container">
-                    <div class="tblcss tbl-row-1">
-                        <div class="concss first-name-con">
-                            <input type="text" class="txtcss first-name-txt" placeholder="First Name" maxlength="100">
+                        <div class="nav-gallery">
+                            <a href="gallery.html">GALLERY . 作品</a>
                         </div>
-                        <div class="concss last-name-con">
-                            <input type="text" class="txtcss last-name-txt" placeholder="Last Name" maxlength="100">
+                        <div class="nav-about-us">
+                            <a href="about-us.html">About Us . 关于</a>
+                        </div>
+                        <div class="nav-service-process">
+                            <a href="service-process.html">Service Process . 流程</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="nav-info">
+                    <div>
+                        <p>Contact us Monday to friday 10am-7pm</p>
+                    </div>
+                    <div class="nav-info-phone">
+                        <img class="img-phone" src="image/call.webp">
+                        <div class="phone-number">
+                            <p>014-944 7685</p>
+                            <p>03-7887 2752</p>
                         </div>
                     </div>
-                    <div class="tblcss tbl-row-2">
-                        <div class="concss email-con">
-                            <input type="mail" class="txtcss email-txt" placeholder="Email" maxlength="250">
-                        </div>
-                        <div class="concss phone-con">
-                            <input type="text" class="txtcss phone-txt" placeholder="Phone" maxlength="50">
+                    <div class="nav-info-mail">
+                        <img class="img-mail" src="image/mail.webp">
+                        <div class="mail-txt">
+                            <p>pinssalesteam@gmail.com</p>
                         </div>
                     </div>
-                    <div class="tblcss-2 tbl-row-3">
-                        <textarea form="mes-form" class="ta other-info-txt" placeholder="Other info"></textarea>
+                    <div class="nav-info-addr">
+                        <img class="img-addr" src="image/loc.webp">
+                        <div class="location-txt">
+                            <p>D 3-3, Pusat Komersial Parklane, Jalan SS 7/26,
+                                47301 Petaling Jaya,
+                                Selangor， Malaysia.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="container-2">
-
+                <div class="nav-fb-insta">
+                    <button class="btn-fb" onclick="more()"></button>
+                    <button class="btn-insta" onclick="more()"></button>
                 </div>
-                <div class="btn-container">
-                    <div class="info-txt">
-                        <p>call us : 03-7887 2752 / 014-3644 551</p>
-                        <p>visit us : D 3-3, Pusat Komersial Parklane, Jalan SS 7/26,
-                            47301 Petaling Jaya, Selangor</p>
-                    </div>
-                    <button class="btn-submit" onclick="more()">Submit</button>
-
-                </div>
-            </form>
+            </div>
         </div>
+        <!------------------------------container-------------------------------------->
+        <div class="about-us-container">
+            <div class="about-us-banner">
+                <div class="img-logo-container">
+                    <img class="img-logo" src="image/Logo_01.webp"></img>
+                </div>
+                <div class="about-us-txt">
+                    <p>About Us</p>
+                </div>
+            </div>
+            <!------------------------------------------------>
+            <div class="our-story-container">
+                <div class="left-container">
+                    <img src="image/demo1.webp">
+                </div>
+                <div class="right-container">
+                    <div class="our-story-front-layer">
+                        <div class="title-vs-img">
+                            <div class="title-txt">
+                                <p><span style="font-size: 16px; color: gray">OUR</span><br>Story</p>
+                            </div>
+                            <img src="image/our-story-demo.webp">
+                        </div>
+                        <div class="story-txt">
+                            <p>We specialize in interior design,
+                                architecture and decoration.
+                                Our ambition is to create designs with life style .</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-team-container">
+                <div class="con-1 img-zoom">
+                    <img src="image/team1.webp">
+                </div>
+                <div class="con-2">
+                    <p>Our Team</p>
+                </div>
+                <div class="con-3 img-zoom">
+                    <img src="image/team2.webp">
+                </div>
+                <div class="con-4 img-zoom">
+                    <img src="image/team3.webp">
+                </div>
+            </div>
 
-    </div>
+            <div class="introduce-con">
+                <p>Pins Studio is composed of a group of professionals that love design and quality lifestyle. We
+                    specialize in interior design, architecture and product design. Pins Studio is composed of a group
+                    of professionals that love design and quality lifestyle. We specialize in interior design,
+                    architecture and product design. Pins Studio is composed of a group of professionals that love
+                    design and quality lifestyle. We specialize in interior design, architecture and product design.
+                    Pins Studio is composed of a group of professionals that love design and quality lifestyle. We
+                    specialize in interior design, architecture and product design. </p>
+            </div>
+            <div class="our-loc-container">
+                <div class="our-loc-txt">
+                    <p class="txt-1">OUR</p>
+                    <p class="txt-2">Location</p>
+                </div>
+                <button class="btn-contact-us" onclick="functionToOpenMenu()">contact us</button>
+            </div>
+            <div class="map-mes-container">
+                <div class="map-con">
+                    <iframe class="google-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.915177799091!2d105.78406587594053!3d21.03607968752582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4a0d0bac5f%3A0xbc39fc03825b4b4f!2zMTAgUC4gVHLhuqduIFF14buRYyBWxrDhu6NuZywgROG7i2NoIFbhu41uZyBI4bqtdSwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1688493102530!5m2!1svi!2s"></iframe>
+                </div>
+                <form class="mes-con" id="mes-form">
+                    <div class="mes-title-txt">
+                        <p>message us</p>
+                    </div>
+                    <div class="tbl-container">
+                        <div class="tblcss tbl-row-1">
+                            <div class="concss first-name-con">
+                                <input type="text" class="txtcss first-name-txt" placeholder="First Name"
+                                    maxlength="100">
+                            </div>
+                            <div class="concss last-name-con">
+                                <input type="text" class="txtcss last-name-txt" placeholder="Last Name" maxlength="100">
+                            </div>
+                        </div>
+                        <div class="tblcss tbl-row-2">
+                            <div class="concss email-con">
+                                <input type="mail" class="txtcss email-txt" placeholder="Email" maxlength="250">
+                            </div>
+                            <div class="concss phone-con">
+                                <input type="text" class="txtcss phone-txt" placeholder="Phone" maxlength="50">
+                            </div>
+                        </div>
+                        <div class="tblcss-2 tbl-row-3">
+                            <textarea form="mes-form" class="ta other-info-txt" placeholder="Other info"></textarea>
+                        </div>
+                    </div>
+                    <div class="container-2">
+                        <div class="property-type-con">
+                            <div class="prop-title">
+                                <p>Property type</p>
+                            </div>
+                            <div class="prop-1">
+                                <input type="radio" name="prop-type" class="radio-type">
+                                <label>Apartment</label>
+                            </div>
+                            <div class="prop-2">
+                                <input type="radio" name="prop-type" class="radio-type">
+                                <label>Condo</label>
+                            </div>
+                            <div class="prop-3">
+                                <input type="radio" name="prop-type" class="radio-type">
+                                <label>Terrace</label>
+                            </div>
+                            <div class="prop-4">
+                                <input type="radio" name="prop-type" class="radio-type">
+                                <label>Semi-D</label>
+                            </div>
+                            <div class="prop-5">
+                                <input type="radio" name="prop-type" class="radio-type">
+                                <label>Bungalow</label>
+                            </div>
+                            <div class="prop-6">
+                                <input type="radio" name="prop-type" class="radio-type">
+                                <label>Shophouse</label>
+                            </div>
+                            <div class="prop-7">
+                                <input type="radio" name="prop-type" class="radio-type">
+                                <label>Commercial</label>
+                            </div>
+
+                        </div>
+                        <div class="property-status-con">
+                            <div class="prop-title">
+                                <p>Property status</p>
+                            </div>
+                            <div class="status-1">
+                                <input type="radio" name="prop-status" class="radio-type">
+                                <label>New unit</label>
+                            </div>
+                            <div class="status-2">
+                                <input type="radio" name="prop-status" class="radio-type">
+                                <label>Resale unit</label>
+                            </div>
+                            <div class="status-3">
+                                <input type="radio" name="prop-status" class="radio-type">
+                                <label>Existing unit</label>
+                            </div>
+                            <div class="status-4">
+                                <input type="radio" name="prop-status" class="radio-type">
+                                <label>Under Contruction</label>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="col-3-con loc-con">
+                                <input type="text" placeholder="location of the house" class="col-3-txt loc-txt">
+                            </div>
+                            <div class="col-3-con budget-con">
+                                <input type="text" placeholder="Budget of renovation" class="col-3-txt budget-txt">
+                            </div>
+                            <div class="idea-con">
+                                <textarea form="mes-form" class="ta-idea"
+                                    placeholder="General idea what do you plan to do :"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-container">
+                        <div class="info-txt">
+                            <p>call us : 03-7887 2752 / 014-3644 551</p>
+                            <p>visit us : D 3-3, Pusat Komersial Parklane, Jalan SS 7/26,
+                                47301 Petaling Jaya, Selangor</p>
+                        </div>
+                        <button class="btn-submit" onclick="more()">Submit</button>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
 
     <script src="script.js"></script>
 </body>
