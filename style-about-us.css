@@ -1,9 +1,7 @@
-
-
 /*----------------------------container--------------------------------*/
 .about-us-container {
     position: relative;
-    width: 800px;
+    width: 1000px;
     min-height: 1500px;
     /* height: fit-content; */
     margin: 0 auto;
@@ -34,7 +32,7 @@
 /*--------------*/
 .our-story-container {
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
     gap: 15px;
 }
@@ -44,22 +42,64 @@
     background-color: chocolate;
 }
 
+.left-container img {
+    width: 100%;
+    height: 100%;
+}
+
 .right-container {
+    position: relative;
+    display: flex;
     width: 50%;
-    background-color: deeppink;
+    background-color: rgba(199, 185, 192, 0.123);
+    align-items: center;
+}
+
+.our-story-front-layer {
+    position: absolute;
+    width: 95%;
+    height: 75%;
+    background-color: white;
+    display: flex;
+}
+
+.title-vs-img {
+    padding: 30px;
+}
+
+.title-vs-img .title-txt {
+    border-left: black solid 2px;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.title-vs-img img {
+    margin-top: 30px;
+}
+
+.story-txt {
+    position: relative;
+    font-size: 25px;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.story-txt p {
+    position: absolute;
+    bottom: 50px;
 }
 
 /*---------------------*/
 .our-team-container {
     margin-top: 15px;
     width: 100%;
-    height: 400px;
+    height: 450px;
     display: flex;
     gap: 10px;
 }
 
 .con-1 {
-    background-color: blueviolet;
+    position: relative;
     width: 25%;
     height: 100%;
 }
@@ -78,15 +118,20 @@
 }
 
 .con-3 {
-    background-color: blue;
+    position: relative;
     width: 25%;
     height: 100%;
 }
 
 .con-4 {
-    background-color: red;
+    position: relative;
     width: 25%;
     height: 100%;
+}
+
+.img-zoom:hover{
+    transform: scale(1.1);
+  
 }
 
 /*----------------------*/
@@ -121,10 +166,11 @@
 
 .txt-1 {
     color: gray;
+    font-size: 22px;
 }
 
 .txt-2 {
-    font-size: x-large;
+    font-size: 30px;
 }
 
 .btn-contact-us {
@@ -139,53 +185,88 @@
     background-color: whitesmoke;
     color: black;
 }
-.map-mes-container{
+
+.map-mes-container {
     width: 100%;
-    height: 600px;
+    height: 800px;
     border: black solid 1px;
     margin-top: 40px;
     display: flex;
     margin-bottom: 100px;
 }
-.map-con{
+
+.map-con {
     width: 33%;
     height: 100%;
     background-color: lightseagreen;
 }
-.mes-con{
+
+.mes-con {
     width: 67%;
     height: 100%;
-    padding: 15px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
-    gap:20px
+    gap: 20px
 }
-.mes-title-txt{
-    font-size: x-large;
+
+.mes-title-txt {
+    font-size: 30px;
 }
-.tbl-container{
+
+.tbl-container {
     border: black solid 1px;
     width: 100%;
-    height: 200px;
+    height: 300px;
+    margin-top: 10px;
 }
-.container-2{
+.tblcss{
+    display: flex;
+    height: 25%;
+}
+.tblcss-2{
+    display: flex;
+    height: 50%;
+}
+.concss{
+    width: 50%;
+    border: black solid 1px;
+}
+
+.txtcss{
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    font-size: 15px;
+    border: none;
+}
+.ta{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.container-2 {
     border: black solid 1px;
     width: 100%;
-    height: 200px;
+    height: 300px;
 }
-.btn-container{
-   
+
+.btn-container {
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.info-txt{
+
+.info-txt {
     width: 50%;
     font-size: small;
 }
-.btn-submit{
+
+.btn-submit {
     border: none;
     width: 150px;
     height: 50px;
@@ -193,7 +274,8 @@
     opacity: 0.8;
     color: white;
 }
-.btn-submit:hover{
+
+.btn-submit:hover {
     cursor: pointer;
     color: white;
     opacity: 1;

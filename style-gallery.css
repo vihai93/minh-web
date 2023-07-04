@@ -102,6 +102,7 @@
         top: 0;
         padding: 0;
         justify-items: flex-start;
+        padding-left: 5px;
     }
 
     .gallery-menu img {
