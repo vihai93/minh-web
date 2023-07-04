@@ -521,7 +521,8 @@
     z-index: 1;
 
 }
-.about-example-img{
+
+.about-example-img {
     display: none;
 }
 
@@ -754,7 +755,12 @@
     z-index: 1;
 
 }
-#font-text-3 img{
+
+#font-text-3 img {
+    display: none;
+}
+
+.hidden-btn-more {
     display: none;
 }
 
@@ -785,7 +791,7 @@
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 250vh;
+        height: 500vh;
         left: 0;
         top: 0;
     }
@@ -808,7 +814,7 @@
 
     .section-award-1 {
         width: 100%;
-        height: 450px;
+        height: 100vh;
     }
 
     #front-top {
@@ -834,7 +840,7 @@
         left: 0;
         top: 0;
         font-size: 15px;
-        background-color: white;
+        background-color: whitesmoke;
     }
 
     .award-txt h1 {
@@ -853,7 +859,8 @@
 
     .section-about {
         width: 100%;
-        height: 550px;
+        height: 100vh;
+        margin-top: 40px;
     }
 
     #back-2 {
@@ -872,11 +879,12 @@
         bottom: 0;
         font-size: 15px;
         text-align: center;
+        background-color: whitesmoke;
     }
 
     #font-text-2 h1 {
         font-size: 22px;
-       
+
     }
 
     #font-text-2 .about-example-img {
@@ -896,7 +904,8 @@
 
     .section-our-service {
         width: 100%;
-        height: 550px;
+        height: 100vh;
+        margin-top: 100vh;
     }
 
     #back-3,
@@ -906,22 +915,37 @@
     }
 
     #font-text-3 {
-        left:0;
+        left: 0;
         bottom: 0;
         width: 100%;
         height: 100%;
         text-align: center;
     }
-    #font-text-3 h1{
+
+    #font-text-3 h1 {
         font-size: 22px;
         margin-top: 20px;
     }
-    .btn-service-forward{
+
+    .btn-service-forward {
         display: none;
     }
-    #font-text-3 img{
+
+    #font-text-3 img {
         display: block;
         width: 100%;
 
+    }
+
+    .hidden-btn-more {
+        display: block;
+        border: none;
+        background-color: gray;
+        color: white;
+        width: 50%;
+        height: 40px;
+        font-size: 15px;
+        margin: 0 auto;
+        margin-top: 40px;
     }
 }
