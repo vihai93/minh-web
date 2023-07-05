@@ -1,0 +1,18 @@
+.gallery-detail-container{
+    width: 1000px;
+    height: 4000px;
+    margin: 0 auto;
+    border: black solid 2px;
+}
+.gallery-detail-banner{
+    display: flex;
+    border: black solid 2px;
+    height: 100px;
+}
+.gallery-txt-con{
+    border-left: black solid 2px;
+}
+.detail-txt-con{
+    display: flex;
+    gap: 20px;
+}

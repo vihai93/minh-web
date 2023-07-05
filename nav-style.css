@@ -29,7 +29,7 @@ ul {
 
 body {
     overflow-x: hidden;
-    background-color: antiquewhite;
+    background-image: url(image/background.jpg);
 }
 
 /*css menu button*/

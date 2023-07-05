@@ -33,3 +33,6 @@
         function goToFb(){
             window.location.href="https://www.facebook.com/10studiovn";
         }
+        function goToDetail(){
+            location.assign("gallery-detail.html");
+        }
